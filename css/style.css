@@ -50,6 +50,7 @@
 .section {
   /* height: 100vh; */
   position: relative;
+  transform: translateY(-70px);
   width: 100%;
   display: flex;
   .img img {
@@ -65,12 +66,39 @@
     justify-content: right;
     & h2 {
       color: #3d3d4a;
-      letter-spacing: 3px;
+      letter-spacing: 5px;
       font-family: "Times New Roman", Times, serif;
       & span {
         color: #7a72ff;
-        font-size: 3rem;
+        font-size: 4.1rem;
       }
     }
+    .buybtn input{
+      font-size: 1.5rem;
+      transform: translateX(10px);
+      background-color: #3d3d4a;
+      color: #fff;
+      padding: 10px 30px;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      transition: .5s;
+      &:hover{
+        background-color: #7a72ff;
+      }
+    }
+  }
+}
+.icons{
+  position: fixed;
+  top: 40%;
+  left: 20px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: red;
+    & i{
+    display: grid;
+    padding: 10px;
+
   }
 }
