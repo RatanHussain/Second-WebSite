@@ -39,8 +39,10 @@
     height: 50px;
     width: 230px;
     border-radius: 30px;
+    background-color: #fff;
     display: flex;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2), -5px -5px 10px rgb(0, 0, 0, 0.2);
+    z-index: 1;
     .icon i {
       margin: 18px 20px;
       font-size: 20px;
@@ -101,6 +103,8 @@
 }
 .icons{
   position: fixed;
+  z-index: 1;
+  background-color: #fff;
   top: 40%;
   left: 20px;
   padding: 15px;
@@ -321,4 +325,54 @@
   }
 }
 
+@media (max-width:768px) {
+  .section{
+    display: block;
+    .img img{
+      height: 200px;
+      width: 100%;
+      margin: 80px auto;
+    }
+    .sectionbtn{
+      height: 200px;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      font-size: 2rem;
+      & h2 span{
+        font-size: 3rem;
+      }
 
+    }
+  }
+
+  .about{
+    display: block;
+    .textside{
+      width: 85%;
+      height: auto;
+      margin: 30px auto;
+      & h1{
+        font-size: 2.2rem;
+      }
+      & h3{
+        font-size: 1.5rem;
+      }
+      & p{
+        font-size: 15px;
+      }
+    }
+    .imgtag img{
+      height: 200px;
+      width: 100%;
+      margin: 30px auto;
+    }
+  }
+  .notify h3{
+    font-size: 1rem;
+  }
+  .notify .inputmail .typehere input{
+    height: 50px;
+  }
+  
+}
