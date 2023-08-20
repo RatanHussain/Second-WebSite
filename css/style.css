@@ -84,9 +84,14 @@
         font-size: 4.1rem;
       }
     }
+    .buybtn{
+      width: 100%;
+      margin: auto;
+    }
     .buybtn input{
       font-size: 1.5rem;
-      transform: translateX(10px);
+      /* width: 100%; */
+      /* transform: translateX(10px); */
       background-color: #3d3d4a;
       color: #fff;
       padding: 10px 30px;
@@ -94,6 +99,7 @@
       border: none;
       outline: none;
       transition: .5s;
+      margin-top: 30px;
       &:hover{
         background-color: #7a72ff;
         transform: scale(1.1);
@@ -282,6 +288,7 @@
       align-items: center;
       box-shadow: 2px 2px 10px rgb(0, 0, 0, .2);
       margin-left: 50px;
+      transform: translateX(-25px);
       padding: 0px 30px;
       border-radius: 40px;
       .typeemail{
@@ -301,6 +308,8 @@
         color: #fff;
         background-color: #000;
         font-size: 1rem;
+        cursor: pointer;
+        transform: translateX(30px);
       }
     }
 
@@ -371,8 +380,33 @@
   .notify h3{
     font-size: 1rem;
   }
-  .notify .inputmail .typehere input{
+  .notify .inputmail .typehere{
     height: 50px;
+    width: 80%;
+    transform: translateX(-30px);
   }
-  
+  .notify .inputmail .typehere .btnsend{
+    width: 40px;
+    transform: translateX(40px);
+    text-align: left;
+    font-size: .7rem;
+    padding-right: 50px;
+
+  }
+  .footer p{
+    font-size: 1rem;
+  }
+  .header .searchbar{
+    width: 60px;
+    transition: all .3s;
+    &:hover{
+      width: 220px;
+    }
+    
+  }
+  .icons{
+    transform: scale(.8);
+    left: 0;
+  }
+ 
 }
